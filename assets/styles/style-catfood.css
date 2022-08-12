@@ -1,0 +1,428 @@
+
+
+@media screen and (min-width: 1024px) {
+
+    .size {
+        width: 87vw;
+        height: 100%;  
+    }
+
+    
+ #main-picture {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 48vw 96vh; 
+    
+ }       
+
+
+    .conteiner1 
+    {
+        display: grid;
+        width: 87vw;
+        height: 96vh;
+        grid-template-areas: "header nav nav nav"
+                             "main aside aside aside"
+                              "footer footer footer footer";
+        grid-template-columns: 40% 20% 20% 20%;
+        grid-template-rows: 14vh 1fr 11vh;
+        }
+
+        .nav {
+            grid-area: nav;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-areas: "menu1 menu2 menu3";
+            grid-template-columns: 25% 30% 27%;
+            grid-template-rows: 80%;
+            justify-items: flex-end;
+            align-items: flex-end;
+            justify-content: flex-start;
+            gap: 2rem;
+            }
+
+            .main {
+                grid-area:main ;
+                display: grid;
+                width: 100%;
+                height: 100%;
+                grid-template-areas: "h1"
+                                     "p"
+                                     "button";
+                grid-template-columns: 100%;
+                grid-template-rows: 30% 20% 30%;
+                justify-items: flex-start;
+                align-content: flex-end;
+                padding-left: 80px;
+                
+            }
+
+            .header {
+                grid-area: header;
+                padding-top: 30px;
+                }
+                
+                .menu
+                 {font-family: 'Oswald', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.2vw;
+                    line-height: 30px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: rgb(255, 255, 255);}
+
+
+                    h1 {
+                        font-family: 'Oswald', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 3.3vw;
+                    line-height: 60px;
+                    margin-right: 40px;
+                    }
+                    
+                    p {
+                    font-family: 'Oswald', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 1.5vw;
+                    line-height: 20px;}
+                    
+                    .button {
+                        display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding-left: 35px;
+                    width: 17vw;
+                    height: 7vh;
+                    font-family: 'Oswald', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.25vw;
+                    text-align: center;
+                    
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    color: #FFFFFF;
+                    background: #68B738;
+                    border: #68B738;
+                    }         
+                    
+                    .aside {
+                        grid-area:aside ;
+                        position: relative;
+                        right: 6.68vw; 
+                        }
+
+                    
+
+            .footer {
+                grid-area: footer;
+                display: grid;
+                width: 100%;
+                height: 100%;
+                grid-template-areas: "foot-img-1 foot-img-2 foot-img-3 foot-img-4 foot-img-5";
+                grid-template-columns: 40% 5% 5% 5% 40%;
+                grid-template-rows: 80%;
+                justify-items: center;
+                align-items: center;
+                justify-content: space-around;
+                gap: 2rem;
+                background: #F2F2F2;
+                border: #F2F2F2;
+                
+            }
+            
+                .foot-img-1 {
+                   margin-right: 11vw;
+                }
+            
+                .foot-img-5 {
+                    margin-left: 19vw;
+                }
+}
+
+
+@media screen and (max-width: 1023px) 
+{
+    .footer {display: none;}
+
+    .foot-img-1 {display: none;}
+
+    .foot-img-2 {display: none;}
+
+    .foot-img-3 {display: none;}
+
+    .foot-img-4 {display: none;}
+
+    .foot-img-5 {display: none;}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .size {
+        width: 100%;
+        height: 100%;  
+    }
+
+    
+ #main-picture {
+    background-repeat: no-repeat;
+    padding-bottom: 45vh;
+    background-size: 100% 100%; 
+    
+ }       
+
+    
+    .conteiner1 
+    {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-areas: "header nav "
+                             "main main"
+                             "aside aside";
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 9vh 1fr 11vh;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #F2F2F2;
+            border: solid #F2F2F2;
+            }
+
+        .nav {
+                grid-area: nav;
+                display: grid;
+                width: 100%;
+                height: 100%;
+                grid-template-areas: "menu1 menu2 menu3";
+                grid-template-columns: 20% 34% 37%;
+                grid-template-rows: 80%;
+                justify-items: flex-start;
+                align-items: center;
+                justify-content: center;
+                align-content: flex-end;
+                border-left: solid #F2F2F2;
+                background-color: #F2F2F2;
+                }
+    
+                .menu 
+                {font-family: 'Oswald', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 2vw;
+                    line-height: 30px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: rgb(0, 0, 0);
+                    }
+
+                    .main {
+                        grid-area:main ;
+                        display: grid;
+                        width: 60vw;
+                        height: 100%;
+                        grid-template-areas: "h1"
+                                             "p"
+                                             "button";
+                        grid-template-columns: 100%;
+                        grid-template-rows: 30% 20% 30%;
+                        justify-items: flex-start;
+                        align-content: flex-end;
+                        gap: 2rem;
+                        padding-left: 80px;
+                        color: rgb(255, 255, 255);
+                    }
+
+                    h1 {
+                        font-family: 'Oswald', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 9vw;
+                    line-height: 70px;
+                    }
+                    
+                    p {
+                    font-family: 'Oswald', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 4.5vw;
+                    line-height: 20px;
+                    padding-top: 2vh;}
+                    
+                    .button {
+                        display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding-left: 45px;
+                    width: 35vw;
+                    height: 7vh;
+                    font-family: 'Oswald', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 2.5vw;
+                    text-align: center;
+                    
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    color: #FFFFFF;
+                    background: #c45806;
+                    border:#c45806;
+                    }
+
+                    .aside {
+                        grid-area:aside ;
+                        position: relative;
+                        right: 5vw; 
+                        max-width: 100%;}
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .size {
+        width: 100%;
+        height: 100%;  
+    }
+
+    
+ #main-picture {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 45vh;
+   background-position: center;
+   
+    
+ }       
+
+ .conteiner1 
+ {
+     display: grid;
+     width: 100%;
+     height: 100%;
+     grid-template-areas: "header "
+                          "nav"
+                          "main"
+                          "aside";
+     grid-template-columns: 100%;
+     grid-template-rows: 10vh 5vh 1fr 6vh;
+     }
+
+     .header {
+         grid-area: header;
+         display: grid;
+         align-items: center;
+         justify-items: center;
+         background-color: #F2F2F2;
+         border: solid #F2F2F2;
+         }
+
+         .nav {
+            grid-area: nav;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-areas: "menu1 menu2 menu3";
+            grid-template-columns: 20% 39% 37%;
+            grid-template-rows: 80%;
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+            align-content: flex-end;
+           
+            }
+
+            .menu {font-family: 'Oswald', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 2.6vw;
+                line-height: 30px;
+                text-transform: uppercase;
+                color: rgb(255, 255, 255);}
+
+
+                .main {
+                    grid-area:main ;
+                    display: grid;
+                    width: 100%;
+                    height: 100%;
+                    grid-template-areas: "h1"
+                                         "p"
+                                         "button";
+                    grid-template-columns: 80%;
+                    grid-template-rows: 30% 20% 30%;
+                    justify-items: flex-start;
+                    align-content: flex-start;
+                    gap: 1rem;
+                    padding-left: 15px;
+                    
+                }
+
+                h1 {
+                    font-family: 'Oswald', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 9vw;
+                line-height: 50px;
+                padding-right: 1vw;
+                color:#c45806;
+                }
+                
+                p {
+                font-family: 'Oswald', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 4.5vw;
+                line-height: 20px;
+                padding-top: 3vh;
+                color: rgb(255, 255, 255);}
+                
+                .button {
+                    display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding-left: 35px;
+                width: 37vw;
+                height: 7vh;
+                font-family: 'Oswald', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2.5vw;
+                text-align: center;
+                margin-top: 3vh;
+                color: rgb(255, 255, 255);
+                
+                text-transform: uppercase;
+                cursor: pointer;
+                color: #FFFFFF;
+                background: #c45806;
+                border:#c45806;
+                }
+
+ 
+ .aside {
+    grid-area:aside ;
+    position: relative;
+   
+    }
+
+    .cat-pro-energy {
+        width: 100vw;
+    height: 50vh;
+    max-width: 100%;
+    }
+}
+
+.menu:hover {text-decoration: underline;
+}
+
+
+
+
+
+
